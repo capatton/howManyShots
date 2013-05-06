@@ -1,63 +1,106 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <link rel='stylesheet' href='/stylesheets/main.css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
     <title>How Many Shots?</title>
-    <table border="10">
-        <tr>
-        <td>Can (Bud Light, etc.)</td>
-        <td>12oz</td>
-        </tr>
-        <tr>
-        <td>Bottle in a 6 pack</td>
-        <td>12oz</td>
-        </tr>
-        <tr>
-        <td>Pint</td>
-        <td>16oz</td>
-        </tr>
-        <tr>
-        <td>Liter</td>
-        <td>33.814oz</td>
-        </tr>
-        </tr>
-        <tr>
-        <td>Growler</td>
-        <td>64oz</td>
-        </tr>
-    </table>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-</head>
-<body>
-  <p></p>
-    <div id="fb-root"></div>
+    <!-- Le styles -->
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="stylesheets/bootstrap-responsive.css" rel="stylesheet">
 
-    <div class="wrapper">
-    <div id="page-header">
-      <h1>Beer To Shots</h1>
-    <form onsubmit="onSubmit()" id="inputForm">
-      Beer Volume (oz): <input type="text" name="volume"><br>
-      Alcohol percentage: <input type="text" name="alcPercent">
-      </br>
-    </form>
-    <button type="button" value="CONVERT" onclick="onSubmit()">CONVERT</button>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
 
-    <p id="numShotsResult"></p>   
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">How Many Shots?</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+    <h1>Beer To Shots</h1>
+      
     <br/>
-    <p id="disclaimer"></p>
+    <form class="form-horizontal" id="inputForm">
+      <div class="control-group">
+        <label class="control-label" for="volume">Beer Volume (oz)</label>
+        <div class="controls">
+          <input type="text" id="volume" placeholder="i.e. 16">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="alcPercent">Alcohol Percent</label>
+        <div class="controls">
+          <input type="text" id="alcPercent" placeholder="i.e. 6.3">
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <button class="btn-large" type="button" value="CONVERT" onclick="onSubmit()">CONVERT</button>
+        </div>
+    </div>
+  </form>
+  
+
+    <h3 class=" "id="numShotsResult"></h3>   
+    <br/>
+    <h6 id="disclaimer"></h6>
     <img src="images/beerMug.jpg"></img>
 
-    </div>
-    <div class="push"></div>
-  </div>
+    </div> <!-- /container -->
 
-  <script src="js/calculator.js"></script>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/calculator.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
 
-  <div class="footer">
-    <p>Made by <a href="https://github.com/capatton">Casey</a></p>
-  </div>
-
-</body>
+  </body>
 </html>

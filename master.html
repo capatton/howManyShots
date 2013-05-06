@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    
     <!-- Le styles -->
     <link href="stylesheets/bootstrap.css" rel="stylesheet">
     <style>
@@ -43,8 +43,6 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -53,29 +51,40 @@
 
     <div class="container">
 
-    <h1>Beer To Shots</h1>
       
     <br/>
-    <form class="form-horizontal" id="inputForm">
-      <div class="control-group">
-        <label class="control-label" for="volume">Beer Volume (oz)</label>
-        <div class="controls">
-          <input type="text" id="volume" placeholder="i.e. 16">
+    <div class="container">
+      <div class="row">
+        <div class="offset4 span4">
+          <h1>Beer To Shots</h1></br>
         </div>
       </div>
-      <div class="control-group">
-        <label class="control-label" for="alcPercent">Alcohol Percent</label>
-        <div class="controls">
-          <input type="text" id="alcPercent" placeholder="i.e. 6.3">
-        </div>
-      </div>
-      <div class="control-group">
-        <div class="controls">
-          <button class="btn-large" type="button" value="CONVERT" onclick="onSubmit()">CONVERT</button>
-        </div>
     </div>
-  </form>
-  
+    <div class="container">
+      <div class="row">
+        <div class="offset3 span3">
+          <form class="form-horizontal" id="inputForm">
+          <div class="control-group">
+            <label class="control-label" for="volume">Beer Volume (oz)</label>
+            <div class="controls">
+              <input type="text" id="volume" placeholder="i.e. 16">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="alcPercent">Alcohol Percent</label>
+            <div class="controls">
+              <input type="text" id="alcPercent" placeholder="i.e. 6.3">
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <button class="btn-large" type="button" value="CONVERT" onclick="onSubmit()">CONVERT</button>
+            </div>
+        </div>
+      </form>
+        </div>
+      </div>
+    </div>
 
     <h3 class=" "id="numShotsResult"></h3>   
     <br/>
@@ -84,23 +93,13 @@
 
     </div> <!-- /container -->
 
+    <div class="navbar navbar-fixed-bottom">
+      
+    </div>
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/calculator.js"></script>
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
-
   </body>
 </html>

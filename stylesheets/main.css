@@ -5,10 +5,10 @@
 body {
     text-align: center;
     background-color: #380000;
+    background-image: 'images/beerMug.jpg';
     color: #D0D0D0;
-    /*background-image: url(/images/dark_fish_skin.png);*/
-    /*background-repeat: repeat;*/
     padding: 0;
+
 }
 
 html, body {
@@ -76,6 +76,7 @@ h2 {
 
 form {
     font-size: 20pt;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 
@@ -88,8 +89,7 @@ button{
 
 input { 
     font-size: 20pt; 
-    font-family: 'Roboto Condensed', sans-serif
-    padding: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
     background: rgba(255,255,255,0.6);
 }
 
@@ -113,6 +113,12 @@ p {
     font-size: 25pt;
     margin-bottom: 0.1em;
     color: #33FFFF;
+}
+
+table {
+    border: 2px solid black;
+    font-size: 15pt;
+    font-family: 'Roboto Condensed', sans-serif
 }
 
 .fb-login-button {

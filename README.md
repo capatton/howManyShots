@@ -1,3 +1,3 @@
 How Many Shots
 ==============
-How many shots are you taking?
+Converts from beer to shots of vodka!

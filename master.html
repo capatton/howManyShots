@@ -51,29 +51,29 @@
 
     <div class="container">
 
-      
-    <br/>
-    <div class="container">
-      <div class="row">
-        <div class="offset4 span4">
-          <h1>Beer To Shots</h1></br>
-        </div>
-      </div>
-    </div>
+    <h1 class="text-center">Beer To Shots</h1></br>
+
     <div class="container">
       <div class="row">
         <div class="offset3 span3">
           <form class="form-horizontal" id="inputForm">
           <div class="control-group">
-            <label class="control-label" for="volume">Beer Volume (oz)</label>
+            <label class="control-label" for="volume">Beer Volume</label>
             <div class="controls">
-              <input type="text" id="volume" placeholder="i.e. 16">
+              <div class="input-append">
+                <input type="text" id="volume" placeholder="i.e. 16">
+                <span class="add-on">oz</span>
+              </div>
             </div>
           </div>
+
           <div class="control-group">
-            <label class="control-label" for="alcPercent">Alcohol Percent</label>
+            <label class="control-label" for="alcPercent">Alcohol</label>
             <div class="controls">
-              <input type="text" id="alcPercent" placeholder="i.e. 6.3">
+              <div class="input-append">
+                <input type="text" id="alcPercent" placeholder="i.e. 6.3">
+                <span class="add-on">%</span>
+              </div>
             </div>
           </div>
           <div class="control-group">
@@ -86,9 +86,13 @@
       </div>
     </div>
 
-    <h3 class=" "id="numShotsResult"></h3>   
-    <br/>
-    <h6 id="disclaimer"></h6>
+   
+          <h3 class="text-center" id="numShotsResult"></h3>   
+          <br/>
+          <h6 class="text-center" id="disclaimer"></h6>
+        
+
+
     <img src="images/beerMug.jpg"></img>
 
     </div> <!-- /container -->

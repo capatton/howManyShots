@@ -1,4 +1,4 @@
-application: seduce-it
+application: how-many-shots
 version: 1
 runtime: python27
 api_version: 1
@@ -9,27 +9,5 @@ handlers:
   static_dir: stylesheets
 - url: /images
   static_dir: images
-- url: /js
-  static_dir: js
-- url: /check/.*
-  script: check.app
-- url: /choose/.*
-  static_files: choose.html
-  upload: choose.html
-- url: /dashboard/.*
-  script: dashboard.app
-- url: /reddit/.*
-  script: reddit.app
-- url: /likes/.*
-  script: likes.app
-- url: /events/.*
-  script: events.app
-- url: /fblogin
-  static_files: fblogin.html
-  upload: fblogin.html
-- url: /update
-  script: update.app
-- url: /reddit/.*
-  script: reddit.app
 - url: /
   script: main.app

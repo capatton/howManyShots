@@ -1,3 +1,3 @@
-Seduce It
+How Many Shots
 ==============
-Woo that special someone with our genius
+How many shots are you taking?

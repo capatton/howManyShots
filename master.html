@@ -31,41 +31,27 @@
 
 </head>
 <body>
-	<p></p>
+  <p></p>
     <div id="fb-root"></div>
 
     <div class="wrapper">
     <div id="page-header">
       <h1>Beer To Shots</h1>
-	  <form onsubmit="onSubmit()" id="inputForm">
-	    Beer Volume (oz): <input type="text" name="volume"><br>
-	    Alcohol percentage: <input type="text" name="alcPercent">
-	    </br>
-	  </form>
-	  <button type="button" value="CONVERT" onclick="onSubmit()">CONVERT</button>
+    <form onsubmit="onSubmit()" id="inputForm">
+      Beer Volume (oz): <input type="text" name="volume"><br>
+      Alcohol percentage: <input type="text" name="alcPercent">
+      </br>
+    </form>
+    <button type="button" value="CONVERT" onclick="onSubmit()">CONVERT</button>
 
-	  <p id="numShotsResult"></p>   
+    <p id="numShotsResult"></p>   
     <img src="images/beerMug.jpg"></img>
 
     </div>
     <div class="push"></div>
   </div>
 
-  <script type="text/javascript">
-  	function onSubmit(){
-  		var beerOz = inputForm.elements["volume"].value;
-  		var beerAlcPercent = inputForm.elements["alcPercent"].value / 100.0;
-
-  		var vodkaOz = 1.50;
-  		var vodkaAlcPercent = .4;
-  		var vodkaTotalAlc = vodkaOz * vodkaAlcPercent;
-
-  		var beerTotalAlc = beerOz * beerAlcPercent;
-
-  		var numShots = parseFloat(beerTotalAlc / vodkaTotalAlc).toFixed(2);
-  		document.getElementById("numShotsResult").innerHTML = numShots + " vodka shots (1.5 oz, 40%).</br>";
-  	}
-  </script>
+  <script src="js/calculator.js"></script>
 
   <div class="footer">
     <p>Made by <a href="https://github.com/capatton">Casey</a></p>

@@ -28,7 +28,7 @@ body > #container {
 }
 
 .footer, .push {
-    height: 2em;
+    height: 4.5em;
     background-color: #000000;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -38,7 +38,7 @@ body > #container {
 }
 
 .footer p {
-    margin-right: 3em;
+    margin-right: 2em;
 }
 
 .footer a {
@@ -48,15 +48,6 @@ body > #container {
 
 .footer a:hover {
     text-decoration: underline;
-}
-
-.ui-widget {
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-#friendNames {
-    font-size: 50px;
 }
 
 .footer a:visited {
@@ -126,8 +117,4 @@ table {
     border: 2px solid black;
     font-size: 15pt;
     font-family: 'Roboto Condensed', sans-serif
-}
-
-.fb-login-button {
-    margin-bottom: 1em;
 }

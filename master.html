@@ -63,15 +63,18 @@
               <div class="input-append">
                 <input type="text" id="volume" placeholder="i.e. 16">
                 <span class="add-on">
-                        <select style="width: 65px; height: 25px" size=auto>
-                          <option value="oz">oz</option>
-                          <option value="pints">pints</option>
-                          <option value="cans">cans</option>
+                        <select style="width: 70px; height: 25px" size=auto id="Units">
+                          <option value="1">oz</option>
+                          <option value="12">Cans (12 oz)</option>
+                          <option value="12">Bottles (12 oz)</option>
+                          <option value="16">Pints (16 oz)</option>
+                          <option value="22">Bombers (22 oz)</option>
+                          <option value="33.814">Liters (33.814 oz)</option>
+                          <option value="64">Growlers (64 oz)</option>
+                          <option value="0.338140227">Centiliters (.34 oz)</option>
+
                         </select>
-                      
                 </span>
-
-
               </div>
             </div>
           </div>
@@ -87,7 +90,7 @@
           </div>
           <div class="control-group">
             <div class="controls">
-              <button class="btn btn-large btn-warning" style="width:298px" type="button" value="CONVERT" onclick="onSubmit()">HOW MANY SHOTS?</button>
+              <button class="btn btn-large btn-info" style="width:298px" type="button" value="CONVERT" onclick="onSubmit()">HOW MANY SHOTS?</button>
             </div>
         </div>
       </form>
@@ -112,6 +115,6 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/calculator.js"></script>
+    <script src="/js/calculator.js"></script>
   </body>
 </html>

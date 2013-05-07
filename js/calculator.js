@@ -1,8 +1,11 @@
 function onSubmit(){
-    var beerOz = inputForm.elements["volume"].value;
+    var beerNum = inputForm.elements["volume"].value;
     var beerAlcPercent = inputForm.elements["alcPercent"].value / 100.0;
 
-    if (isNaN(beerOz) || isNaN(beerAlcPercent))
+    var beerUnits = Units.value;
+
+
+    if (isNaN(beerNum) || isNaN(beerAlcPercent))
     {
         document.getElementById("ErrorText").innerHTML = "Input valid numbers."
         document.getElementById("numShotsResult").innerHTML = "";
@@ -15,7 +18,7 @@ function onSubmit(){
     var vodkaAlcPercent = .4;
     var vodkaTotalAlc = vodkaOz * vodkaAlcPercent;
 
-    var beerTotalAlc = beerOz * beerAlcPercent;
+    var beerTotalAlc = beerUnits * beerAlcPercent * beerNum;
 
     var numShots = parseFloat(beerTotalAlc / vodkaTotalAlc).toFixed(2);
 

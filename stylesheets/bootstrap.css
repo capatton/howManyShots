@@ -228,6 +228,7 @@ body {
   line-height: 20px;
   color: #333333;
   background-color: #E2C6B8;
+  background-image: url('http://www.uber-facts.com/wp-content/uploads/2013/04/mug_of_beer-7581.jpg');
 }
 
 a {
@@ -733,7 +734,6 @@ a.text-success:focus {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -742,7 +742,17 @@ h6 {
   font-family: inherit;
   font-weight: bold;
   line-height: 20px;
-  color: inherit;
+  color: #fffeea;
+  text-rendering: optimizelegibility;
+  text-shadow: 5px 5px 5px #000000;
+}
+
+h2 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
   text-rendering: optimizelegibility;
 }
 
@@ -761,18 +771,20 @@ h1,
 h2,
 h3 {
   line-height: 40px;
+
 }
 
 h1 {
-  font-size: 38.5px;
+  font-size: 80px;
+  text-shadow: 5px 5px 5px #000000;
 }
 
 h2 {
-  font-size: 31.5px;
+  font-size: 100px;
 }
 
 h3 {
-  font-size: 24.5px;
+  font-size: 34.5px;
 }
 
 h4 {
@@ -1713,9 +1725,9 @@ select:focus:invalid:focus {
 .input-append .add-on,
 .input-prepend .add-on {
   display: inline-block;
-  width: auto;
+  width: 65px;
   height: 20px;
-  min-width: 16px;
+  min-width: 4px;
   padding: 4px 5px;
   font-size: 14px;
   font-weight: normal;
@@ -1964,6 +1976,8 @@ legend + .control-group {
   width: 160px;
   padding-top: 5px;
   text-align: right;
+  color: #fffeea;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .form-horizontal .controls {

@@ -821,6 +821,13 @@ h4 small {
   font-size: 14px;
 }
 
+.errorText {
+  color:#000000;
+  text-shadow:none;
+  line-height: 75px;
+
+}
+
 .page-header {
   padding-bottom: 9px;
   margin: 20px 0 30px;

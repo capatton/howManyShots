@@ -4,7 +4,10 @@ function onSubmit(){
 
     if (isNaN(beerOz) || isNaN(beerAlcPercent))
     {
-        document.getElementById("numShotsResult").innerHTML = "Please input valid numbers";
+        document.getElementById("ErrorText").innerHTML = "Input valid numbers."
+        document.getElementById("numShotsResult").innerHTML = "";
+        document.getElementById("shotsLabel").innerHTML = "";
+        document.getElementById("disclaimer").innerHTML = "";
         return;
     }
 
@@ -16,6 +19,7 @@ function onSubmit(){
 
     var numShots = parseFloat(beerTotalAlc / vodkaTotalAlc).toFixed(2);
 
+    document.getElementById("ErrorText").innerHTML = "";
     document.getElementById("numShotsResult").innerHTML = numShots;
     document.getElementById("shotsLabel").innerHTML = " vodka shots";
     document.getElementById("disclaimer").innerHTML = "Assumes standard 1.5 oz shots, 80 proof vodka";

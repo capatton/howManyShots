@@ -16,6 +16,7 @@ function onSubmit(){
 
     var numShots = parseFloat(beerTotalAlc / vodkaTotalAlc).toFixed(2);
 
-    document.getElementById("numShotsResult").innerHTML = numShots + " vodka shots";
+    document.getElementById("numShotsResult").innerHTML = numShots;
+    document.getElementById("shotsLabel").innerHTML = " vodka shots";
     document.getElementById("disclaimer").innerHTML = "Assumes standard 1.5 oz shots, 80 proof vodka";
 }

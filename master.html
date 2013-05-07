@@ -51,7 +51,7 @@
 
     <div class="container">
 
-    <h1 class="text-center">Beer To Shots</h1></br>
+    <h1 class="text-center">Beer To Shots</h1></br><br><br>
 
     <div class="container">
       <div class="row">
@@ -62,7 +62,18 @@
             <div class="controls">
               <div class="input-append">
                 <input type="text" id="volume" placeholder="i.e. 16">
-                <span class="add-on">oz</span>
+
+
+                <span class="add-on">
+                        <select style="width: 65px" size="0">
+                          <option value="oz">oz</option>
+                          <option value="pints">pints</option>
+                          <option value="cans">cans</option>
+                        </select>
+                      
+                </span>
+
+
               </div>
             </div>
           </div>
@@ -78,7 +89,7 @@
           </div>
           <div class="control-group">
             <div class="controls">
-              <button class="btn-large" type="button" value="CONVERT" onclick="onSubmit()">CONVERT</button>
+              <button class="btn btn-large btn-warning" style="width:298px" type="button" value="CONVERT" onclick="onSubmit()">HOW MANY SHOTS?</button>
             </div>
         </div>
       </form>
@@ -87,13 +98,12 @@
     </div>
 
    
-          <h2 class="text-center" id="numShotsResult"></h2>   
+          <h2 class="text-center" id="numShotsResult"></h2> <h3 class="text-center"id="shotsLabel"> </h3>   
           <br/>
-          <h6 class="text-center" id="disclaimer"></h6>
+          <h6 class="text-center remove-shadow" id="disclaimer"></h6>
         
 
-
-    <img src="images/beerMug.jpg"></img>
+<!-- <img src="images/beerMug.jpg"> </img> -->
 
     </div> <!-- /container -->
 

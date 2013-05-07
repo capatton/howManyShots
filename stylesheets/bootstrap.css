@@ -756,6 +756,12 @@ h2 {
   text-rendering: optimizelegibility;
 }
 
+.remove-shadow{
+  color:#000000;
+  text-shadow: none;
+
+}
+
 h1 small,
 h2 small,
 h3 small,

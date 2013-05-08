@@ -8,6 +8,32 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+
+select {
+  -webkit-appearance: button;
+  -webkit-border-radius: 0px;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  -webkit-padding-end: 0px;
+  -webkit-padding-start: 0px;
+  -webkit-user-select: none;
+  background-image: url("../images/dropdown_arrow.png"), 
+    -webkit-linear-gradient(#eeeeee, #eeeeee 40%, #eeeeee);
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 0px solid #AAA;
+  color: #555;
+  font-size: 10px;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
+vertical-align:middle;
+  white-space: normal;
+}
+
+
+
+
 .clearfix {
   *zoom: 1;
 }
@@ -228,7 +254,7 @@ body {
   line-height: 20px;
   color: #333333;
   background-color: #E2C6B8;
-  background-image: url('http://www.uber-facts.com/wp-content/uploads/2013/04/mug_of_beer-7581.jpg');
+  background-image: url('../images/beerMug.jpg');
 }
 
 a {
@@ -1221,9 +1247,13 @@ input[type="file"] {
 }
 
 select {
-  width: 220px;
+  width: 65px;
+  height: 24px;
+  padding-top: 0px;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
+  border: 0px solid #ff0000;
+  overflow: hidden;
+  vertical-align:middle;
 }
 
 select[multiple],

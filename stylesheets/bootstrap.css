@@ -8,14 +8,19 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+.customConvert{
+  width: 297px;
+}
 
 .customNavLink:hover{
     opacity: 1.0;
     text-decoration: none;
+    color: #63D1F4;
 }
 
 .customNavLink{
     opacity: 0.5;
+    color: #63D1F4;
 }
 
 .customBottomNav{
@@ -873,8 +878,8 @@ h4 small {
 }
 
 .errorText {
-  color:#000000;
-  text-shadow:none;
+  color:transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.8);
   line-height: 75px;
 
 }

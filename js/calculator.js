@@ -21,9 +21,18 @@ function onSubmit(){
     var beerTotalAlc = beerUnits * beerAlcPercent * beerNum;
 
     var numShots = parseFloat(beerTotalAlc / vodkaTotalAlc).toFixed(2);
-
-    document.getElementById("ErrorText").innerHTML = "";
-    document.getElementById("numShotsResult").innerHTML = numShots;
-    document.getElementById("shotsLabel").innerHTML = " vodka shots";
-    document.getElementById("disclaimer").innerHTML = "Assumes standard 1.5 oz shots, 80 proof vodka";
+    if (numShots == Number.POSITIVE_INFINITY)
+    {
+        document.getElementById("ErrorText").innerHTML = "Too many shots.";
+        document.getElementById("numShotsResult").innerHTML = "";
+        document.getElementById("shotsLabel").innerHTML = "";
+        document.getElementById("disclaimer").innerHTML = "";
+    }
+    else
+    {
+        document.getElementById("ErrorText").innerHTML = "";
+        document.getElementById("numShotsResult").innerHTML = numShots;
+        document.getElementById("shotsLabel").innerHTML = " vodka shots";
+        document.getElementById("disclaimer").innerHTML = "Assumes standard 1.5 oz shots, 80 proof vodka";
+    }
 }
